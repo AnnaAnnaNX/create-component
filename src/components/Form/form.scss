@@ -1,0 +1,109 @@
+.form {
+  font-family: Roboto;
+  width: 326px;
+  height: 222px;
+}
+.form__upper-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+  text-align: left;
+  height: 24px;
+}
+.form__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.0015em;
+  text-align: left;
+  position: absolute;
+  top: 15px;
+  transition: top .5s ease;
+}
+.form__label-up {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.004em;
+  text-align: left;
+  top: 5px;
+}
+.form__input-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.0015em;
+  text-align: left;
+  width: 326px;
+  height: 146px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  resize: none;
+  &:focus {
+    border: 0;
+    outline: none;
+  }
+}
+.center {
+  position: relative;
+  background: #F0F0F0;
+  padding-right: 35px;
+  padding-top: 25px;
+}
+.center_error {
+  background: #FBF0EF;
+}
+.form__loader {
+  animation: spinAround 6s linear infinite;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+.form__error {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  color: #D6675C;
+}
+.form__text-length {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  color: #878F97;
+}
+.form__clear {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  color: #16a5d9;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
